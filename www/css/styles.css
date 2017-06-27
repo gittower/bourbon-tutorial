@@ -602,4 +602,23 @@ hr {
     content: "";
     display: block; }
 
+/************ Navigation */
+header {
+  width: 100%;
+  height: 72px;
+  display: table; }
+  header #logo {
+    display: table-cell;
+    vertical-align: middle; }
+  header nav {
+    float: right;
+    line-height: 72px; }
+    header nav a {
+      font-size: 18px;
+      color: #E3857D;
+      text-transform: uppercase;
+      margin-right: 40px; }
+      header nav a:last-child {
+        margin-right: 9px; }
+
 /*# sourceMappingURL=styles.css.map */
