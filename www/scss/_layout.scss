@@ -1,6 +1,9 @@
 /************ General Page Elements */
 .row-wrapper {
-
+  &:nth-child(odd) {
+    background: $row-background;
+  }
+    
   .grid-container {
     @include grid-container();
     max-width: 1044px;

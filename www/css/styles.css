@@ -592,6 +592,8 @@ hr {
 
 /***** Custom Layout Styles *****/
 /************ General Page Elements */
+.row-wrapper:nth-child(odd) {
+  background: #F2EEDA; }
 .row-wrapper .grid-container {
   max-width: 1044px;
   margin: 0px auto; }
