@@ -39,3 +39,10 @@ header {
     }
   }
 }
+
+
+/************ Teaser Top */
+article.teaser--top {
+  @include grid-column(8, $neat-grid--page);
+  @include grid-push(2, $neat-grid--page);
+}
