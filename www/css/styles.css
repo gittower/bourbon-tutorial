@@ -448,7 +448,7 @@ textarea {
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
   appearance: none;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #551501;
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -457,7 +457,7 @@ textarea {
   transition: border-color 150ms ease;
   width: 100%; }
   [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
-    border-color: #b1b1b1; }
+    border-color: #441101; }
   [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
     border-color: #E3857D;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(227, 133, 125, 0.7);
@@ -466,7 +466,7 @@ textarea {
     background-color: #f2f2f2;
     cursor: not-allowed; }
     [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
-      border: 1px solid #ddd; }
+      border: 1px solid #551501; }
   [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
     color: #9b9495; }
 
@@ -539,13 +539,13 @@ table {
   width: 100%; }
 
 th {
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid #401001;
   font-weight: 600;
   padding: 0.75em 0;
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #551501;
   padding: 0.75em 0; }
 
 tr,
@@ -568,14 +568,23 @@ h6 {
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-size: 1.25em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  text-transform: uppercase; }
 
 h1 {
   font-size: 3em; }
 
+h2 {
+  font-size: 2em; }
+
 p {
   font-size: 1.125em;
   margin: 0 0 0.75em; }
+
+.meta {
+  color: #551501;
+  text-transform: uppercase;
+  opacity: 0.5; }
 
 a {
   color: #E3857D;
@@ -586,9 +595,12 @@ a {
   a:focus {
     outline: 3px solid rgba(227, 133, 125, 0.6);
     outline-offset: 2px; }
+  .continue-reading a {
+    padding-right: 25px;
+    background: url(../img/icon-arrow.svg) center right no-repeat; }
 
 hr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #551501;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -630,6 +642,8 @@ article.teaser--top {
   width: calc(66.66667% - 73.33333px);
   float: left;
   margin-left: 44px;
-  margin-left: calc(16.66667% - 51.33333px + 88px); }
+  margin-left: calc(16.66667% - 51.33333px + 88px);
+  margin-top: 88px;
+  margin-bottom: 79px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -45,4 +45,7 @@ header {
 article.teaser--top {
   @include grid-column(8, $neat-grid--page);
   @include grid-push(2, $neat-grid--page);
+  
+  margin-top:88px;
+  margin-bottom:79px;
 }
