@@ -1,0 +1,9 @@
+/************ General Page Elements */
+.row-wrapper {
+
+  .grid-container {
+    @include grid-container();
+    max-width: 1044px;
+    margin: 0px auto;
+  }  
+}
