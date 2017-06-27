@@ -12,6 +12,10 @@ $large-screen: 900px;
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
 
+// Font sizes
+$heading1-font-size: 3em;
+$article-font-size: 1.125em;
+
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
@@ -27,11 +31,12 @@ $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$red: #E3857D;
 $row-background: #F2EEDA;
     
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: #594C4F;
+$action-color: $red;
 
 // Border
 $base-border-color: $light-gray;

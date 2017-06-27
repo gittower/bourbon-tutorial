@@ -392,7 +392,7 @@ template {
 
 button, [type='button'], [type='reset'], [type='submit'] {
   appearance: none;
-  background-color: #1565c0;
+  background-color: #E3857D;
   border: 0;
   border-radius: 3px;
   color: #fff;
@@ -411,16 +411,16 @@ button, [type='button'], [type='reset'], [type='submit'] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
-    background-color: #11519a;
+    background-color: #b66a64;
     color: #fff; }
   button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
-    outline: 3px solid rgba(21, 101, 192, 0.6);
+    outline: 3px solid rgba(227, 133, 125, 0.6);
     outline-offset: 2px; }
   button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
-      background-color: #1565c0; }
+      background-color: #E3857D; }
 
 fieldset {
   background-color: transparent;
@@ -459,8 +459,8 @@ textarea {
   [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
     border-color: #b1b1b1; }
   [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
-    border-color: #1565c0;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 101, 192, 0.7);
+    border-color: #E3857D;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(227, 133, 125, 0.7);
     outline: none; }
   [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
     background-color: #f2f2f2;
@@ -468,7 +468,7 @@ textarea {
     [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
       border: 1px solid #ddd; }
   [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
-    color: #858585; }
+    color: #9b9495; }
 
 textarea {
   resize: vertical; }
@@ -490,7 +490,7 @@ select {
 [type="radio"]:focus,
 [type="file"]:focus,
 select:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
+  outline: 3px solid rgba(227, 133, 125, 0.6);
   outline-offset: 2px; }
 
 html {
@@ -554,7 +554,7 @@ th {
   vertical-align: middle; }
 
 html {
-  color: #333;
+  color: #594C4F;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-size: 100%;
   line-height: 1.5; }
@@ -570,17 +570,21 @@ h6 {
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
+h1 {
+  font-size: 3em; }
+
 p {
+  font-size: 1.125em;
   margin: 0 0 0.75em; }
 
 a {
-  color: #1565c0;
+  color: #E3857D;
   text-decoration-skip: ink;
   transition: color 150ms ease; }
   a:hover {
-    color: #104c90; }
+    color: #aa645e; }
   a:focus {
-    outline: 3px solid rgba(21, 101, 192, 0.6);
+    outline: 3px solid rgba(227, 133, 125, 0.6);
     outline-offset: 2px; }
 
 hr {
