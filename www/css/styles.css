@@ -645,5 +645,14 @@ article.teaser--top {
   margin-left: calc(16.66667% - 51.33333px + 88px);
   margin-top: 88px;
   margin-bottom: 79px; }
+  article.teaser--top .teaser-image {
+    margin-bottom: 18px;
+    height: 228px;
+    width: 624px;
+    background-size: 624px 228px;
+    background-image: url(../img/chevron-teaser.png); }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      article.teaser--top .teaser-image {
+        background-image: url(../img/chevron-teaser@2x.png); } }
 
 /*# sourceMappingURL=styles.css.map */
