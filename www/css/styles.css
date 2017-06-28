@@ -696,8 +696,9 @@ article.teaser--top {
   article.teaser--top .teaser-image {
     margin-bottom: 18px;
     height: 228px;
-    width: 624px;
-    background-size: 624px 228px;
+    width: 100%;
+    background-size: 100% 228px;
+    background-repeat: no-repeat;
     background-image: url(../img/chevron-teaser.png); }
     @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       article.teaser--top .teaser-image {

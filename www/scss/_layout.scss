@@ -53,6 +53,7 @@ article.teaser--top {
     margin-bottom:18px;
     @include size($teaser-image-width, $teaser-image-height);
     background-size: $teaser-image-width $teaser-image-height;
+    background-repeat:no-repeat;
     background-image:url(../img/chevron-teaser.png);
     @media
       screen and (-webkit-min-device-pixel-ratio: 2),
