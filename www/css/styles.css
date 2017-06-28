@@ -574,17 +574,31 @@ h6 {
 h1 {
   font-size: 3em; }
 
-h2 {
-  font-size: 2em; }
+h2,
+h3 {
+  font-size: 1.8em;
+  font-weight: normal;
+  margin: 2px 0 10px; }
+
+h3 {
+  color: #E3857D;
+  text-transform: none; }
+
+h5 {
+  color: #E3857D;
+  font-size: 1.125em;
+  margin: 0 0 8px 0; }
 
 p {
   font-size: 1.125em;
-  margin: 0 0 0.75em; }
+  margin: 0 0 7px; }
 
 .meta {
   color: #551501;
   text-transform: uppercase;
   opacity: 0.5; }
+  #recent-posts .meta {
+    font-size: 0.95em; }
 
 a {
   color: #E3857D;
@@ -654,5 +668,64 @@ article.teaser--top {
     @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       article.teaser--top .teaser-image {
         background-image: url(../img/chevron-teaser@2x.png); } }
+
+/************ Recent Posts */
+#recent-posts {
+  width: calc(66.66667% - 73.33333px);
+  float: left;
+  margin-left: 44px;
+  margin-left: calc(16.66667% - 51.33333px + 88px); }
+  #recent-posts .teaser--recent {
+    margin-top: 50px; }
+  #recent-posts .meta {
+    float: right; }
+
+/************ Subscribe */
+#subscribe {
+  width: calc(83.33333% - 80.66667px);
+  float: left;
+  margin-left: 44px;
+  margin-left: calc(8.33333% - 47.66667px + 88px);
+  padding: 48px 45px 45px 45px;
+  margin-bottom: 105px;
+  margin-top: 75px;
+  background: white;
+  border-top: 4px solid #E3857D; }
+  #subscribe .note {
+    float: left;
+    margin-left: 12; }
+  #subscribe .follow {
+    float: right;
+    margin-right: 12; }
+
+/************ About */
+#about {
+  width: calc(75% - 77px);
+  float: left;
+  margin-left: 44px;
+  margin-left: calc(8.33333% - 47.66667px + 88px);
+  padding: 79px 0 140px 0; }
+  #about .tower-icon, #about p {
+    margin-top: 30px; }
+  #about .tower-icon {
+    float: left;
+    height: 147px;
+    width: 114px;
+    margin-right: 30px;
+    background-size: 114px 147px;
+    background-image: url(../img/icon-tower.png); }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      #about .tower-icon {
+        background-image: url(../img/icon-tower@2x.png); } }
+
+/************ Footer */
+footer {
+  width: calc(100% - 88px);
+  float: left;
+  margin-left: 44px;
+  font-size: 0.95em;
+  height: 72px;
+  line-height: 72px;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
