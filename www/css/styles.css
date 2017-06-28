@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***** 3rd Party Components *****/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -535,7 +536,7 @@ body {
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
+  margin: 15px 0px 0px 0px;
   padding: 0; }
 
 dl {
@@ -547,6 +548,15 @@ dt {
 
 dd {
   margin: 0; }
+
+li:before {
+  content: "›";
+  color: #E3857D; }
+
+li a {
+  padding-left: 7px;
+  color: #594C4F;
+  font-size: 1.4em; }
 
 figure {
   margin: 0; }

@@ -1,7 +1,7 @@
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
+  margin: 15px 0px 0px 0px;
   padding: 0;
 }
 
@@ -16,4 +16,14 @@ dt {
 
 dd {
   margin: 0;
+}
+
+li:before {
+  content:"›";
+  color: $red;
+}
+li a {
+  padding-left:7px;
+  color:$base-font-color;
+  font-size:$recommended-reading-font-size;
 }
