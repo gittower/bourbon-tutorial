@@ -85,6 +85,7 @@ article.teaser--top {
 /************ Article Detail */
 #full-article {
   width: 100%;
+  padding-bottom:50px;
 
   #article-content {
     @include grid-column(10, $neat-grid--page);
@@ -123,14 +124,18 @@ article.teaser--top {
 
 
 /************ Subscribe */
-#subscribe {
+%whitebox {
   @include grid-column(10, $neat-grid--page);
   @include grid-push(1, $neat-grid--page);
   padding: 48px 45px 45px 45px;
   margin-bottom:105px;
   margin-top:75px;
   background:white;
-  border-top:4px solid $red;
+  border-top:4px solid $red;  
+}
+
+#subscribe {
+  @extend %whitebox;
   
   .note {
     float:left;
@@ -141,6 +146,34 @@ article.teaser--top {
     float:right;
     margin-right: map-get($neat-grid--page, columns);
   }
+}
+
+
+/************ Author */
+#author {
+  @include grid-column(10, $neat-grid--page);
+  @include grid-push(1, $neat-grid--page);
+  padding-top:75px;
+      
+  .author-icon {
+    float:left;
+    margin-right:23px;
+    @include size($author-image-width, $author-image-height);
+    background-image:url(../img/author.jpg);
+    @media
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image:url(../img/author@2x.jpg);
+    }
+    border-radius:50%;
+  }
+}
+
+/************ Recommended Reading */
+#recommended-reading {
+  @extend %whitebox;
+  margin-top:55px;
 }
 
 
