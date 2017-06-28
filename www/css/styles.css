@@ -708,10 +708,10 @@ article.teaser--top {
     width: 100%;
     background-size: 100% 228px;
     background-repeat: no-repeat;
-    background-image: url(../img/chevron-teaser.png); }
+    background-image: url("../img/chevron-teaser.png"); }
     @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
       article.teaser--top .teaser-image {
-        background-image: url(../img/chevron-teaser@2x.png); } }
+        background-image: url("../img/chevron-teaser@2x.png"); } }
     @media (max-width: 480px) {
       article.teaser--top .teaser-image {
         background-size: contain;

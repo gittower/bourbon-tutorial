@@ -59,16 +59,7 @@ article.teaser--top {
   & .teaser-image {
     margin-bottom:18px;
     @include size($teaser-image-width, $teaser-image-height);
-    background-size: $teaser-image-width $teaser-image-height;
-    background-repeat:no-repeat;
-    background-image:url(../img/chevron-teaser.png);
-    @media
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image:url(../img/chevron-teaser@2x.png);
-    }
-    
+    @include retina-image($teaser-image-width, $teaser-image-height, '../img/chevron-teaser');
     @include grid-media($neat-grid--mobile) {
       background-size: contain;
       @include size($teaser-image-width, $teaser-image-height/2)
