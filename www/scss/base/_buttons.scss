@@ -1,4 +1,5 @@
-#{$all-buttons} {
+#{$all-buttons},
+.button {
   appearance: none;
   background-color: $action-color;
   border: 0;
@@ -37,4 +38,25 @@
       background-color: $action-color;
     }
   }
+}
+
+
+.button--twitter {
+  @include size(58px);
+  background:#5AA4D4 url(../img/icons-social.svg) -132px 19px no-repeat;
+}
+
+.button--rss {
+  @include size(152px, 58px);
+  background:#FFA763 url(../img/icon-rss.svg) 16px center no-repeat;
+  padding-left:50px;
+  margin-left:11px;
+  line-height:28px;
+  font-size:$article-font-size;
+}
+
+.button--try {
+  border:2px solid $red;
+  background-color:transparent;
+  color:$red;
 }

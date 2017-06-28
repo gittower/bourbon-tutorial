@@ -390,11 +390,12 @@ template {
 [hidden] {
   display: none; }
 
-button, [type='button'], [type='reset'], [type='submit'] {
+button, [type='button'], [type='reset'], [type='submit'],
+.button {
   appearance: none;
   background-color: #E3857D;
   border: 0;
-  border-radius: 3px;
+  border-radius: 6px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -410,17 +411,40 @@ button, [type='button'], [type='reset'], [type='submit'] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
-  button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
+  button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover,
+  .button:hover {
     background-color: #b66a64;
     color: #fff; }
-  button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
+  button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus,
+  .button:focus {
     outline: 3px solid rgba(227, 133, 125, 0.6);
     outline-offset: 2px; }
-  button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
+  button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled,
+  .button:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
+    button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover,
+    .button:disabled:hover {
       background-color: #E3857D; }
+
+.button--twitter {
+  height: 58px;
+  width: 58px;
+  background: #5AA4D4 url(../img/icons-social.svg) -132px 19px no-repeat; }
+
+.button--rss {
+  height: 58px;
+  width: 152px;
+  background: #FFA763 url(../img/icon-rss.svg) 16px center no-repeat;
+  padding-left: 50px;
+  margin-left: 11px;
+  line-height: 28px;
+  font-size: 1.125em; }
+
+.button--try {
+  border: 2px solid #E3857D;
+  background-color: transparent;
+  color: #E3857D; }
 
 fieldset {
   background-color: transparent;
@@ -449,7 +473,7 @@ textarea {
   appearance: none;
   background-color: #fff;
   border: 1px solid #551501;
-  border-radius: 3px;
+  border-radius: 6px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   margin-bottom: 0.75em;
