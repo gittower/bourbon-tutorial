@@ -698,11 +698,40 @@ article.teaser--top {
   width: calc(66.66667% - 73.33333px);
   float: left;
   margin-left: 44px;
-  margin-left: calc(16.66667% - 51.33333px + 88px); }
+  margin-left: calc(16.66667% - 51.33333px + 88px);
+  padding: 10px 0px 75px 0px; }
   #recent-posts .teaser--recent {
     margin-top: 50px; }
   #recent-posts .meta {
     float: right; }
+
+/************ Article Detail */
+#full-article {
+  width: 100%; }
+  #full-article #article-content {
+    width: calc(83.33333% - 80.66667px);
+    float: left;
+    margin-left: 44px;
+    margin-left: calc(8.33333% - 47.66667px + 88px); }
+  #full-article #main-image, #full-article .content-image {
+    background-position: center;
+    border-radius: 6px; }
+  #full-article #main-image {
+    margin: 72px 0px 60px 0px;
+    height: 348px;
+    width: 100%;
+    background-image: url(../img/chevron-main-image.jpg); }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      #full-article #main-image {
+        background-image: url(../img/chevron-main-image@2x.jpg); } }
+  #full-article .content-image {
+    margin: 15px 0px 27px 0px;
+    height: 264px;
+    width: 100%;
+    background-image: url(../img/image-article-content.jpg); }
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      #full-article .content-image {
+        background-image: url(../img/image-article-content@2x.jpg); } }
 
 /************ Subscribe */
 #subscribe {

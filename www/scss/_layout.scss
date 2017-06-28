@@ -68,7 +68,7 @@ article.teaser--top {
 #recent-posts {
   @include grid-column(8, $neat-grid--page);
   @include grid-push(2, $neat-grid--page);
-//  @include pad(10px 0px 75px 0px);
+  padding: 10px 0px 75px 0px;
   
   .teaser--recent {
     margin-top:50px;
@@ -78,6 +78,46 @@ article.teaser--top {
     float:right;
   }
   
+}
+
+
+/************ Article Detail */
+#full-article {
+  width: 100%;
+
+  #article-content {
+    @include grid-column(10, $neat-grid--page);
+    @include grid-push(1, $neat-grid--page);
+  }
+
+  %article-images {
+    background-position:center;
+    border-radius:$base-border-radius;
+  }
+  #main-image {
+    @extend %article-images;
+    margin:72px 0px 60px 0px;
+    @include size($main-image-width, $main-image-height);
+    background-image:url(../img/chevron-main-image.jpg);
+    @media
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image:url(../img/chevron-main-image@2x.jpg);
+    }
+  }
+  .content-image {
+    @extend %article-images;
+    margin:15px 0px 27px 0px;
+    @include size($content-image-width, $content-image-height);
+    background-image:url(../img/image-article-content.jpg);
+    @media
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image:url(../img/image-article-content@2x.jpg);
+    }
+  } 
 }
 
 
