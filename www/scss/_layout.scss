@@ -32,6 +32,9 @@ header {
       color: #E3857D;
       text-transform: uppercase;
       margin-right:40px;
+      @include grid-media($neat-grid--mobile) {
+        margin-right: 12px;
+      }
       
       &:last-child {
         margin-right:9px;
@@ -45,6 +48,10 @@ header {
 article.teaser--top {
   @include grid-column(8, $neat-grid--page);
   @include grid-push(2, $neat-grid--page);
+  @include grid-media($neat-grid--mobile) {
+    @include grid-column(4);
+    @include grid-push(0);
+  }
   
   margin-top:88px;
   margin-bottom:79px;
@@ -61,6 +68,11 @@ article.teaser--top {
       screen and (min-resolution: 2dppx) {
       background-image:url(../img/chevron-teaser@2x.png);
     }
+    
+    @include grid-media($neat-grid--mobile) {
+      background-size: contain;
+      @include size($teaser-image-width, $teaser-image-height/2)
+    }
   }
 }
 
@@ -70,6 +82,10 @@ article.teaser--top {
   @include grid-column(8, $neat-grid--page);
   @include grid-push(2, $neat-grid--page);
   padding: 10px 0px 75px 0px;
+  @include grid-media($neat-grid--mobile) {
+    @include grid-column(4);
+    @include grid-push(0);
+  }
   
   .teaser--recent {
     margin-top:50px;
@@ -77,6 +93,9 @@ article.teaser--top {
   
   .meta {
     float:right;
+    @include grid-media($neat-grid--mobile) {
+      float: none;
+    }
   }
   
 }
@@ -128,6 +147,10 @@ article.teaser--top {
   @include grid-column(10, $neat-grid--page);
   @include grid-push(1, $neat-grid--page);
   padding: 48px 45px 45px 45px;
+  @include grid-media($neat-grid--mobile) {
+    @include grid-column(4);
+    @include grid-push(0);
+  }
   margin-bottom:105px;
   margin-top:75px;
   background:white;
@@ -181,6 +204,10 @@ article.teaser--top {
 #about {
   @include grid-column(9, $neat-grid--page);
   @include grid-push(1, $neat-grid--page);
+  @include grid-media($neat-grid--mobile) {
+    @include grid-column(4);
+    @include grid-push(0);
+  }
   padding: 79px 0 140px 0;
 
   %tower-common {
@@ -199,6 +226,10 @@ article.teaser--top {
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image:url(../img/icon-tower@2x.png);
+    }
+    @include grid-media($neat-grid--mobile) {
+      float:none;
+      margin: 0px auto;
     }
   }
   p {

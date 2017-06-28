@@ -3,6 +3,11 @@ $neat-grid--page: (
   columns: 12,
   gutter: 44px,
 );
+$neat-grid--mobile: (
+  columns: 4,
+  gutter: 20px,
+  media: "(max-width: 480px)"
+);
 
 // Breakpoints
 $medium-screen: 600px;
